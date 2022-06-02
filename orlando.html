@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+<form method="POST" action="https://www2.ifrn.edu.br/sirab/send.php">
+
+    <label>Nome </br>
+        <input type="text" name="nome_pessoa" required autofocus placeholder="ex:joãozinho"> 
+    </label> </br>
+
+    <label>E-mail </br>
+        <input type="email" name="email" required placeholder="joao@gmail.com">
+    </label> </br>
+
+    <label>Senha </br>
+        <input type="password" name="senha" required size="40" placeholder="digita a merda da senha">
+    </label> </br>
+    
+    <label>Sexo</label>
+<label><input type="radio" name="sexo" value="M" />M</label>
+<label><input type="radio" name="sexo" value="F" />F</label> <p>
+
+
+
+    <label>Data de nascimento </br>
+        <input type="text" name="data_nascimento" maxlength="10" required size="20" placeholder="__/__/___">
+        <input type="reset" value="Reset"></br>
+
+    <label for="arquivos">Uploads:</label> 
+        <input type="file" id="arquivos" name="arquivos" multiple /> <br>        
+    </label> <p>
+
+    <label>Linguagem que usa</label>
+     <label><input type="checkbox" name="php" value="1">PHP</label>
+     <label><input type="checkbox" name="js" value="1">JS</label> <br>
+
+     <select name="browser">
+        <option value="0">Internet Explorer</option>
+        <option value="1">Firefox</option>
+        <option value="2">Chrome</option>
+        <option value="3">Opera</option>
+        <option value="4">Safari</option>
+    </select> <br> <br>
+
+    <input name="browser" list="browsers" />
+    <datalist id="browsers">
+        <option value="Internet Explorer" />
+        <option value="Firefox" />
+        <option value="Chrome" />
+        <option value="Opera" />
+        <option value="Safari" />
+    </datalist> <p> 
+
+    <label for="obs">Observações</label>
+        <textarea id="obs" name="observacoes"></textarea> <br> <br>
+
+    
+    
+    
+
+
+
+
+     <br><button>Enviar</button>
+     <br><button type="button" onclick="alert('mano')">Button</button>
+     
+     
+
+
+
+
+</form>
+    
+</body>
+</html>
